@@ -5,13 +5,13 @@
   Write a program that uses your `cont-frac` procedure from exercise 1.37 to approximate `e`, based on Euler's expansion.
  |#
 (define (euler-n x)
-        (cond ((= x 0) 1)
-              ((= (remainder (- x 1) 3) 
-                  0) (* 2 
-                        (+ 1 
-                           (/ (- x 1) 
-                              3))))
-              (else 1)))
+    (cond ((= x 0) 1)
+          ((= (remainder (- x 1) 3) 0) 
+            (* 2 
+               (+ 1 
+                  (/ (- x 1) 
+                     3))))
+          (else 1)))
 
 (euler-n 10) ;8
 (euler-n 7)  ;6
@@ -27,5 +27,5 @@
     (iter 0 0))
 
 (cont-frac-iter (lambda (i) 1.0)
-           (lambda (i) 1.0)
-           11)
+                euler-n
+                11)

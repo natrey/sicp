@@ -41,8 +41,8 @@ b. If your `cont-frac` procedure generates a recursive process, write one that g
     (iter 0 0))
 
 (cont-frac-iter (lambda (i) 1.0)
-           (lambda (i) 1.0)
-           11.0)
+                (lambda (i) 1.0)
+                11.0)
 
 ;Value: .6180555555555556
 ;If 𝝓 = (1 + √5)/2, then 1/𝝓 = 1/((1 + √5)/2) = 2/(1 + √5) ≈ 0,618033.
