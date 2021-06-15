@@ -15,3 +15,7 @@ To execute procedures from files run
 ```bash
 scheme < file.scm
 ```
+
+## Documentation
+
+I have found it convenient to use this [documentation](https://www.scheme.com/tspl3/tspl_1.html#./tspl:h0) to look up for available procedures in Scheme.
